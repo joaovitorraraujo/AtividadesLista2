@@ -52,8 +52,8 @@ registro = input("Deseja ver o dados registrados?(S/N):")
 match registro.lower():
     case "s":
         print(f'Nome: {nome}')
-        print(f'Idade: {idade}')
-        print(f'Salário: {salario}')
+        print(f'Idade: {idade} anos')
+        print(f'Salário: R${salario},00')
         print(f'Sexo: {sexo}')
         print(f'Estado Civil: {estadocivil}')
         print("\nEncerrando o programa!")
