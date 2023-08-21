@@ -56,6 +56,7 @@ match registro.lower():
         print(f'Salário: {salario}')
         print(f'Sexo: {sexo}')
         print(f'Estado Civil: {estadocivil}')
+        print("\nEncerrando o programa!")
     case "n":
         print("Encerrando o programa!")
     case _:
