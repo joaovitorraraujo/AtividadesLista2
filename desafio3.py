@@ -1,7 +1,7 @@
 # Altere o programa anterior para que ele aceite apenas números entre 0 e 1000
 invalido = True
 while invalido:
-    print("DIGITE APENAS VALORES DE 0 A 1000\n")
+    print("DIGITE APENAS VALORES DE 0 A 1000 E INTEIROS\n")
     num1 = int(input("Digite o primeiro número:"))
     if num1 <0 or num1>1000:
         print("\n===Digite um número válido!!!===\n")
