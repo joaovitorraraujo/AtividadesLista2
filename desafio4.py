@@ -56,10 +56,10 @@ match registro.lower():
         print(f'\033[033mSalário: \033[mR${salario},00')
         print(f'\033[033mSexo: \033[m{sexo}')
         print(f'\033[033mEstado Civil: \033[m{estadocivil}')
-        print("\n\033[031mEncerrando o programa!")
+        print("\n\033[031mEncerrando o programa!\033[m")
     case "n":
-        print("Encerrando o programa!")
+        print("Encerrando o programa!\033[m")
     case _:
-        print("Encerrando o programa!")
+        print("Encerrando o programa!\033[m")
 
    
