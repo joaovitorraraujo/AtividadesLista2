@@ -15,6 +15,6 @@ for i in range(1, num + 1):
     print('{} '.format(i), end='')
 
 if contador == 2:
-    print(f'\n\033[mO número \033[032m{num}\033[m é primo, ou seja, divisível apenas por 1 ou \033[032m{num}\033[m')
+    print(f'\n\033[mO número \033[032m{num}\033[m é primo, ou seja, divisível apenas por 1 ou {num}\033[m')
 else:
     print(f'\n\033[mO número \033[032m{num}\033[m não é primo e pode ser divisível por \033[032m{contador}\033[m números')
