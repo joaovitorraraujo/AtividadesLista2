@@ -1,14 +1,14 @@
-print("Suas respostas serão validadas")
+print("\033[032mSUAS RESPOSTAS SERÃO VALIDADAS!\033[m\n")
 def validarnome(nome):
     return len(nome) > 3
 
 validarsexo = 'fmFM'
 validarestadocivil = 'scvdSCVD'
 
-print("Digite um nome  maior que 3 caracteres!\n")
+print("Digite um nome  maior que 3 caracteres!")
 validacao = True
 while validacao:
-    nome = input("Seu nome:")
+    nome = input("\033[033mSeu nome:\033[m")
     if not validarnome(nome):
         print("\nDigite um nome válido\n")
     else:
@@ -16,7 +16,7 @@ while validacao:
 
 validacao = True
 while validacao:
-    idade = int(input("Sua idade:"))
+    idade = int(input("\033[033mSua idade:\033[m"))
     if idade<0 or idade >150:
         print("\nDigite uma idade entre 0 à 150 anos\n")
     else:
@@ -24,7 +24,7 @@ while validacao:
 
 validacao = True
 while validacao:
-    salario = int(input("Um salário:"))
+    salario = int(input("\033[033mUm salário:\033[m"))
     if salario<=0:
         print("\nDigite um salário maior que 0\n")
     else:
@@ -32,7 +32,7 @@ while validacao:
 
 validacao = True
 while validacao:
-    sexo = input("Seu sexo(F/M):")
+    sexo = input("\033[033mSeu sexo(F/M):\033[m")
     if sexo in validarsexo:
         validacao = False   
     else:
@@ -40,23 +40,23 @@ while validacao:
 
 validacao = True
 while validacao:
-    estadocivil = input("Seu estado civil(S/C/V/D):")
+    estadocivil = input("\033[033mSeu estado civil(S/C/V/D):\033[m")
     if estadocivil in validarestadocivil:
         validacao = False   
     else:
         print("\nDigite apenas (S/C/V/D)\n")
 
-print("\nDADOS REGISTRADOS E VALIDADOS!!!")
+print("\n\033[032mDADOS REGISTRADOS E VALIDADOS COM SUCESSO!!!\n")
 
-registro = input("Deseja ver o dados registrados?(S/N):")
+registro = input("Deseja ver o dados registrados?(S/N):\033[m")
 match registro.lower():
     case "s":
-        print(f'Nome: {nome}')
-        print(f'Idade: {idade} anos')
-        print(f'Salário: R${salario},00')
-        print(f'Sexo: {sexo}')
-        print(f'Estado Civil: {estadocivil}')
-        print("\nEncerrando o programa!")
+        print(f'\033[033mNome: \033[m{nome}')
+        print(f'\033[033mIdade: \033[m{idade} anos')
+        print(f'\033[033mSalário: \033[mR${salario},00')
+        print(f'\033[033mSexo: \033[m{sexo}')
+        print(f'\033[033mEstado Civil: \033[m{estadocivil}')
+        print("\n\033[031mEncerrando o programa!")
     case "n":
         print("Encerrando o programa!")
     case _:
