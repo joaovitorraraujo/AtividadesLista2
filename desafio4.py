@@ -58,8 +58,8 @@ match registro.lower():
         print(f'\033[033mEstado Civil: \033[m{estadocivil}')
         print("\n\033[031mEncerrando o programa!\033[m")
     case "n":
-        print("Encerrando o programa!\033[m")
+        print("\033[031mEncerrando o programa!\033[m")
     case _:
-        print("Encerrando o programa!\033[m")
+        print("\033[031mEncerrando o programa!\033[m")
 
    
